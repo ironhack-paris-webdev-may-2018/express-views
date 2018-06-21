@@ -12,7 +12,7 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "hbs");
 
 // make files in "views/partials/" available as partials
-hbs.registerPartials(__dirname + "/views/partials")
+hbs.registerPartials(__dirname + "/views/partials");
 
 // uncomment this if you want to change the name of the "views/" folder
 // app.set("views", __dirname + "/othername");
