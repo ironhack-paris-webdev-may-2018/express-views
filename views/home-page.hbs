@@ -1,0 +1,18 @@
+<p>Here's a sample of our playlist:</p>
+
+<h2>{{ featured.title }}</h2>
+<p>by {{ featured.artist }}</p>
+
+{{#if featured.comment}}
+  <h3>Curator's Comment</h3>
+  <p>{{ featured.comment }}</p>
+{{else}}
+  <p>No comment yet.</p>
+{{/if}}
+
+<img width="300px" src="{{ featured.photoUrl }}" />
+<br />
+
+<a href="/playlist">See the Playlist</a>
+
+{{> login}}
